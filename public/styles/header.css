@@ -1,11 +1,12 @@
-header {
+.page-header {
+  margin-top: 100px;
   height: 400px;
   width: 100%;
   z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #c28b00;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */

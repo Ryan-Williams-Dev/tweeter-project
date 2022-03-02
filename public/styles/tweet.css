@@ -1,0 +1,69 @@
+.tweet {
+  margin-top: 2em;
+  border-style: solid;
+  border-width: 0.2em;
+}
+
+.tweet:hover {
+  box-shadow: 10px 10px 0px lightgray;
+}
+
+.tweet header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.7em;
+}
+
+.tweet .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet .user-info .name {
+  margin-left: 0.5em;
+}
+
+.tweet header .handle {
+  color: rgb(165, 165, 165);
+}
+
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.7em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+}
+
+.tweet .footer span {
+  font-size: smaller;
+}
+
+.tweet footer .actions {
+  color: #4056A1;
+}
+
+.fa-flag:hover,
+.fa-retweet:hover,
+.fa-heart:hover {
+  color: #c28b00;
+}
+
+
+.tweet .tweet-body {
+  margin: 0.7em;
+  margin-bottom: 00.5em;
+  margin-top: 0em;
+  border-bottom: 0.25em solid darkgrey;
+}
+
+.tweet .tweet-body p {
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
