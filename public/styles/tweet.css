@@ -70,4 +70,6 @@
 
 #tweets-container {
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column-reverse;
 }

@@ -26,6 +26,9 @@
   justify-content: space-between;
   align-items: center;
   font-family: 'Bungee', cursive;
+  padding-top: 0.2em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
 }
 
 #neg-count {
