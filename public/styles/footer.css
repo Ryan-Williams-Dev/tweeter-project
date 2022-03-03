@@ -1,0 +1,23 @@
+.sticky-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.scroll-up-button {
+  background-color: red;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+footer .fa-angles-up {
+  color: white;
+  font-size: xx-large;
+}

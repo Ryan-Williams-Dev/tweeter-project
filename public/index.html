@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -32,7 +33,7 @@
       <span class="logoText">tweeter</span>
       <div class="newTweetPrompt">
         <span><strong>Write</strong> a new tweet</span>
-        <i class="fa-solid fa-angles-down"></i>
+        <i id="new-tweet-reveal" class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
     <header class="page-header">
@@ -41,13 +42,13 @@
       </div>
       <br>
       <div>
-        <h2><strong>Ryan</strong> Williams</h2>
+        <span class="name-under-pic"><strong>Ryan</strong> Williams</span>
       </div>
     </header>
     
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet hidden">
         <p id="error-msg" class="hidden"></p>
         <h2 class="sub-header">Compose Tweet</h2>
         <form id="tweet-form" class="tweet-form-box" method="POST" action="/tweets/">
@@ -61,6 +62,12 @@
       <section id="tweets-container">
         
       </section>
+
+      <footer class="sticky-footer">
+        <div class="scroll-up-button">
+          <i class="fa-solid fa-angles-up"></i>
+        </div>
+      </footer>
     </main>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
