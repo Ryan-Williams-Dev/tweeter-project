@@ -17,7 +17,7 @@ $(document).ready(function () {
     <span class="handle">${tweetData.user.handle}</span> 
     </header>
     <div class="tweet-body">
-    <p class="tweet-content">${tweetData.content.text}</p>
+    <p class="tweet-content">${escape(tweetData.content.text)}</p>
     </div>
     <footer>
     <span>${timeago.format(tweetData.created_at)}</span>
@@ -55,6 +55,7 @@ $(document).ready(function () {
       data: formData,
     })
     .then(() => {
+      $('#tweets-container').empty();
       loadTweets();
     })
   });
@@ -69,6 +70,12 @@ $(document).ready(function () {
     })
   };
   
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   loadTweets();
   
 });
