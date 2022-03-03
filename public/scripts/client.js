@@ -41,13 +41,14 @@ $(document).ready(function () {
   
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
+    $('#error-msg').slideUp(100);
     const formData = ($(this).serialize());
     const text = event.target[0].value;
     if (!text || text.length <= 0) {
-      return alert("Must not be empty");
+      return $('#error-msg').text("⚠️ Warning: Tweet cannot be empty. ⚠️").slideDown();
     }
     if (text.length > 140) {
-      return alert("Must not be over 140 characters in length");
+      return $('#error-msg').text("⚠️ Warning: Tweets cannot be over the maximum of 140 characters long. ⚠️").slideDown();
     }
     $.ajax({
       url: '/tweets',

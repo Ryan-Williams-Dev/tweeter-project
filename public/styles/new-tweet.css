@@ -39,3 +39,17 @@
   font-family: 'Bungee', cursive;
   margin-bottom: 0.4em;
 }
+
+
+.new-tweet #error-msg {
+  border: 5px;
+  border-style: solid;
+  border-color: red;
+  padding: 0.7em;
+  padding-left: 2em;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
