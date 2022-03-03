@@ -1,0 +1,40 @@
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;  
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  
+  .page-header {
+    min-width: 20vw;
+    max-width: 30vw;
+    margin-top: 30vh;
+    margin-left: 5vw;
+  }
+
+  nav {
+    background-color: #4057a1;
+  }
+
+  main {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 60vw;
+    min-width: 30vw;
+    margin-top: 10vh;
+    min-height: 40vh; 
+    max-height: 90vh;
+    overflow-y: auto
+  }
+
+  #tweets-container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  footer {
+    border-color: black;
+  }
+
+}

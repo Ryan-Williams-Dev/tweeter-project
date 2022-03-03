@@ -14,10 +14,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 1.2em;
 }
 
 footer .fa-angles-up {
   color: white;
   font-size: xx-large;
 }
+

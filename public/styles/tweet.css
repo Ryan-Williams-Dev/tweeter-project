@@ -70,6 +70,8 @@
 
 #tweets-container {
   width: 85%;
+  max-width: 800px;
+  min-width: 400px;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column-reverse;
