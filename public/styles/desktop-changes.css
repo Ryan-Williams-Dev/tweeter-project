@@ -24,17 +24,17 @@
   main {
     margin-left: 3vw;
     margin-right: 3vw;
-    max-width: 60vw;
+    max-width: 70vw;
     min-width: 30vw;
     margin-top: 10vh;
     min-height: 40vh; 
     max-height: 90vh;
     overflow-y: auto;
+    flex-grow: 2;
   }
 
   #tweets-container {
-    margin-left: 5vw;
-    margin-right: 5vw;
+  
   }
   
   footer {
