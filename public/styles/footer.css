@@ -1,3 +1,6 @@
+@import './color-themes.css';
+
+
 .sticky-footer {
   width: 100%;
   position: fixed;
@@ -7,7 +10,7 @@
 }
 
 .scroll-up-button {
-  background-color: red;
+  background-color: var(--primary-color);
   height: 80px;
   width: 80px;
   border-radius: 50%;

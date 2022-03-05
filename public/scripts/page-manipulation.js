@@ -36,20 +36,34 @@ $(document).ready(function() {
     /* Changes which buttons are available based on scroll posistion */
     if ($(window).scrollTop() === 0) {
       $('.newTweetPrompt').slideDown();
+      $('#theme-button').slideDown();
       $('.scroll-up-button').slideUp();
     } else {
       $('.newTweetPrompt').slideUp();
       $('.scroll-up-button').slideDown();
+      $('#theme-button').slideUp();
     }
 
     /* Changes colour of logo based on scroll posistion */
 
     if ($(window).width() < 1024) {
       if ($(window).scrollTop() > 360) {
-        $('nav').css('color', "#4057a1");
+        $('nav').css('color', "var(--primary-color)");
       } else {
         $('nav').css('color', "#FFFFFF");
       }
+    }
+
+  });
+
+  $('#theme-button').click(() => {
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")) {
+      $('#theme-button').removeClass("fa-moon");
+      $('#theme-button').addClass("fa-sun");
+    } else {
+      $('#theme-button').removeClass("fa-sun");
+      $('#theme-button').addClass("fa-moon");
     }
 
   });

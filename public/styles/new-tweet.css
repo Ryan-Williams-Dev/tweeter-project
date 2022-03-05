@@ -1,3 +1,6 @@
+@import './color-themes.css';
+
+
 .new-tweet {
   width: 90%;
   display: flex;
@@ -9,14 +12,14 @@
   border-style: none;
   border-color: transparent;
   border-bottom: 0.25em solid darkgrey;
-  background-color: #f4f1ec;
+  background-color: var(--background-color);
   width: 100%;
   resize: none;
   outline: none;
 }
 
 .tweet-button {
-  background-color: #4056A1;
+  background-color: var(--primary-color);
   color: #FFFFFF;
   padding: 0.3em;
 }

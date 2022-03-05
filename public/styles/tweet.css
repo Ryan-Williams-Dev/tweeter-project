@@ -1,11 +1,15 @@
+@import './color-themes.css';
+
+
 .tweet {
   margin-top: 2em;
   border-style: solid;
   border-width: 0.2em;
+  background-color: var(--tweet-backG);
 }
 
 .tweet:hover {
-  box-shadow: 10px 10px 0px lightgray;
+  box-shadow: 10px 10px 0px var(--tweet-shadow);
 }
 
 .tweet header {
@@ -46,13 +50,13 @@
 }
 
 .tweet footer .actions {
-  color: #4056A1;
+  color: var(--primary-color);
 }
 
 .fa-flag:hover,
 .fa-retweet:hover,
 .fa-heart:hover {
-  color: #c28b00;
+  color: var(--secondary-color);
 }
 
 
@@ -60,7 +64,7 @@
   margin: 0.7em;
   margin-bottom: 00.5em;
   margin-top: 0em;
-  border-bottom: 0.25em solid darkgrey;
+  border-bottom: 0.25em solid var(--tweet-border);
 }
 
 .tweet .tweet-body p {

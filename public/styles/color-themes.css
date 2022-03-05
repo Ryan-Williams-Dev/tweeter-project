@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #4057a1;
+  --background-color: #f4f1ec;
+  --secondary-color: #c28b00;
+  --tweet-border: darkgrey;
+  --tweet-shadow: lightgrey;
+  --body-color: #545149;
+  --tweet-backG: antiquewhite;
+}
+
+.dark-theme {
+  --primary-color: #270082;
+  --background-color: #1A1A40;
+  --secondary-color: #7A0BC0;
+  --tweet-border: #FA58B6;
+  --tweet-shadow: #270082;
+  --body-color: #FA58B6;
+}
