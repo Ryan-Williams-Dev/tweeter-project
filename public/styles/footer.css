@@ -1,3 +1,5 @@
+
+
 .sticky-footer {
   width: 100%;
   position: fixed;
@@ -7,7 +9,7 @@
 }
 
 .scroll-up-button {
-  background-color: red;
+  background-color: var(--primary-color);
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -15,6 +17,7 @@
   justify-content: center;
   align-items: center;
   margin: 1.2em;
+  box-shadow: -10px 10px 15px -10px rgba(0,0,0,0.80);
 }
 
 footer .fa-angles-up {

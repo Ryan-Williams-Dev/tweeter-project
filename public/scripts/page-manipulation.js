@@ -46,10 +46,22 @@ $(document).ready(function() {
 
     if ($(window).width() < 1024) {
       if ($(window).scrollTop() > 360) {
-        $('nav').css('color', "#4057a1");
+        $('nav').css('color', "var(--primary-color)");
       } else {
         $('nav').css('color', "#FFFFFF");
       }
+    }
+
+  });
+
+  $('#theme-button').click(() => {
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")) {
+      $('#theme-button').removeClass("fa-moon");
+      $('#theme-button').addClass("fa-sun");
+    } else {
+      $('#theme-button').removeClass("fa-sun");
+      $('#theme-button').addClass("fa-moon");
     }
 
   });
