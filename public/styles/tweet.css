@@ -66,6 +66,7 @@
 .tweet .tweet-body p {
   margin-left: 0.6em;
   margin-right: 0.6em;
+  overflow-wrap: break-word;
 }
 
 #tweets-container {

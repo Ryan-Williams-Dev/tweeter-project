@@ -35,10 +35,10 @@ $(document).ready(function() {
   $(window).on('scroll', () => {
     /* Changes which buttons are available based on scroll posistion */
     if ($(window).scrollTop() === 0) {
-      $('.newTweetPrompt').slideDown();
       $('.scroll-up-button').slideUp();
+      $('nav').slideDown();
     } else {
-      $('.newTweetPrompt').slideUp();
+      $('nav').slideUp();
       $('.scroll-up-button').slideDown();
     }
 

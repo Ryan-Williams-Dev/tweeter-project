@@ -11,24 +11,24 @@ $(document).ready(function() {
   const createTweetElement = function(tweetData) {
     const $tweet = `
     <article class="tweet">
-    <header>
-    <div class="user-info">
-    <img src="${tweetData.user.avatars}">
-    <span class="name">${tweetData.user.name}</span>
-    </div>
-    <span class="handle">${tweetData.user.handle}</span> 
-    </header>
-    <div class="tweet-body">
-    <p class="tweet-content">${escape(tweetData.content.text)}</p>
-    </div>
-    <footer>
-    <span>${timeago.format(tweetData.created_at)}</span>
-    <div class="actions">
-    <i class="fa-solid fa-flag"></i>
-    <i class="fa-solid fa-retweet"></i>
-    <i class="fa-solid fa-heart"></i>
-    </div>
-    </footer>
+      <header>
+        <div class="user-info">
+          <img src="${tweetData.user.avatars}">
+          <span class="name">${tweetData.user.name}</span>
+        </div>
+        <span class="handle">${tweetData.user.handle}</span> 
+      </header>
+      <div class="tweet-body">
+       <p class="tweet-content">${escape(tweetData.content.text)}</p>
+      </div>
+      <footer>
+        <span>${timeago.format(tweetData.created_at)}</span>
+        <div class="actions">
+          <i class="fa-solid fa-flag"></i>
+          <i class="fa-solid fa-retweet"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </footer>
     </article>
     `;
     return $tweet;
@@ -52,13 +52,20 @@ $(document).ready(function() {
     const text = event.target[0].value;
 
     if (!text || text.length <= 0) {
-      return $('#error-msg').text("⚠️ Warning: Tweet cannot be empty. ⚠️").slideDown();
+      $('#error-msg').text("⚠️ Warning: Tweet cannot be empty. ⚠️").slideDown();
+      return setTimeout(() => {
+        $('#error-msg').slideUp();
+      }, 4000)
     }
     if (text.length > 140) {
-      return $('#error-msg').text("⚠️ Warning: Tweets cannot be over the maximum of 140 characters long. ⚠️").slideDown();
+      $('#error-msg').text("⚠️ Warning: Tweets cannot be over the maximum of 140 characters long. ⚠️").slideDown();
+      return setTimeout(() => {
+        $('#error-msg').slideUp();
+      }, 4000)
     }
 
     $('#tweet-text').val('');
+    $('.counter').val('140');
     $.ajax({
       url: '/tweets',
       method: 'POST',
