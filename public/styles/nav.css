@@ -45,10 +45,20 @@ nav {
 
 .newTweetPrompt .fa-angles-down:hover {
   animation: hithere 1s ease infinite;
-  color: red;
+  color: var(--primary-color);
 }
 
 #theme-button:hover {
   animation: hithere 1s ease infinite;
-  color: red
+  color: var(--primary-color)
+}
+
+@media only screen and (min-width: 1024px) {
+  #theme-button:hover {
+    color: var(--secondary-color)
+  }
+
+  .newTweetPrompt .fa-angles-down:hover {
+    color: var(--secondary-color);
+  }
 }

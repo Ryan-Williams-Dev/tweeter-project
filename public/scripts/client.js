@@ -11,24 +11,24 @@ $(document).ready(function() {
   const createTweetElement = function(tweetData) {
     const $tweet = `
     <article class="tweet">
-    <header>
-    <div class="user-info">
-    <img src="${tweetData.user.avatars}">
-    <span class="name">${tweetData.user.name}</span>
-    </div>
-    <span class="handle">${tweetData.user.handle}</span> 
-    </header>
-    <div class="tweet-body">
-    <p class="tweet-content">${escape(tweetData.content.text)}</p>
-    </div>
-    <footer>
-    <span>${timeago.format(tweetData.created_at)}</span>
-    <div class="actions">
-    <i class="fa-solid fa-flag"></i>
-    <i class="fa-solid fa-retweet"></i>
-    <i class="fa-solid fa-heart"></i>
-    </div>
-    </footer>
+      <header>
+        <div class="user-info">
+          <img src="${tweetData.user.avatars}">
+          <span class="name">${tweetData.user.name}</span>
+        </div>
+        <span class="handle">${tweetData.user.handle}</span> 
+      </header>
+      <div class="tweet-body">
+        <p class="tweet-content">${escape(tweetData.content.text)}</p>
+      </div>
+      <footer>
+        <span>${timeago.format(tweetData.created_at)}</span>
+        <div class="actions">
+          <i class="fa-solid fa-flag"></i>
+          <i class="fa-solid fa-retweet"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </footer>
     </article>
     `;
     return $tweet;
