@@ -9,10 +9,11 @@
 }
 
 .dark-theme {
-  --primary-color: #270082;
-  --background-color: #1A1A40;
-  --secondary-color: #7A0BC0;
-  --tweet-border: #FA58B6;
-  --tweet-shadow: #270082;
-  --body-color: #FA58B6;
+  --primary-color: #7A0BC0;
+  --background-color: #121212;
+  --secondary-color: #1A1A40;
+  --tweet-border: #6d6d6d;
+  --tweet-shadow: #313131;
+  --body-color: #c5c5c5;
+  --tweet-backG: #222222;
 }
